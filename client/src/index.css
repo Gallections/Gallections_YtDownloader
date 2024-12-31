@@ -1,0 +1,14 @@
+/* styles.css */
+
+body {
+  font-family: Nunito;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: white;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}

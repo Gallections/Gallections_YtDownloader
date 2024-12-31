@@ -1,0 +1,39 @@
+.toggler{
+    background-color: white; /* Set the background color */
+    color: white; /* Text color */
+    padding: 15px; /* Add padding for size */
+    border: none; /* Remove border */
+    border: 2px solid var(--mainColor);
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Change cursor on hover */
+    width: 2.8rem; /* Fixed width to maintain circular shape */
+    height: 2.8rem; /* Fixed height to maintain circular shape */
+    display: flex; /* Center the text/icon */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    box-sizing: border-box;
+    transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.toggler.toggled {
+    /* background-color: tomato; */
+    background-color: var(--mainColor);
+    border: none;
+    cursor:auto;
+}
+
+.toggle-description {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
+    color: var(--mainDescriptionColor);
+    font-weight: 550;
+    display: block;
+    /* font-family: ; */
+}
+
+.toggler:hover {
+    background-color: var(--mainColor);
+    border: none;
+}

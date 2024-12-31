@@ -1,0 +1,29 @@
+.app {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 60rem;
+  height: 28rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 3px solid rgb(205, 197, 197);
+}
+
+.toggler-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem 1rem 2rem 1rem;
+  /* background-color: green; */
+  border-top: 1px solid rgb(166, 165, 165);
+  /* border-left: 2px solid rgb(166, 165, 165); */
+  border-bottom: 2px solid rgb(166, 165, 165);
+  margin: 2rem 0rem 2rem 2rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(247, 247, 247);
+}

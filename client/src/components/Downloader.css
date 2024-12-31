@@ -1,0 +1,92 @@
+.container {
+    text-align: center;
+    margin: 2rem 2rem 2rem 0;
+    /* background-color: #eb4034; */
+    background-color: var(--mainContainerColor);
+    padding: 2rem 2rem 4rem 2rem;
+    border-radius: 0 1rem 1rem 0;
+    width: 100%;
+    /* margin-left: 4rem; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .downloader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    
+  }
+  
+  .downloader .text-input{
+    padding: 0.5rem;
+    width: 27rem;
+    height: 1.1rem;
+    border-radius: 6px;
+    font-size: 13px;
+    background: #fbfbfb;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+  }
+
+  .downloader .text-input:focus {
+    border: 2px solid rgb(124, 138, 255);
+    outline: none;
+  }
+
+  .downloader .radio-input{
+    display: inline-flex;
+    gap: 1rem;
+    width: 6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .downloader button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 20rem;
+    justify-content: center;
+  }
+  
+  .downloader button:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-button i{
+    color: white;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    width: 0.8rem;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(white 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    background-size: 20% 100%;
+    animation: l1 1s infinite linear;
+    margin-left: 1rem;
+    display: inline-flex;
+  }
+  @keyframes l1 {
+    0%  {background-size: 20% 100%,20% 100%,20% 100%}
+    33% {background-size: 20% 10% ,20% 100%,20% 100%}
+    50% {background-size: 20% 100%,20% 10% ,20% 100%}
+    66% {background-size: 20% 100%,20% 100%,20% 10% }
+    100%{background-size: 20% 100%,20% 100%,20% 100%}
+  }
+  

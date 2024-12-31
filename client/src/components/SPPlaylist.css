@@ -1,0 +1,29 @@
+.SpContainer {
+    text-align: center;
+    margin: 2rem 2rem 2rem 0;
+    /* background-color: #eb4034; */
+    background-color: var(--mainContainerColor);
+    padding: 2rem 2rem 4rem 2rem;
+    border-radius: 0 1rem 1rem 0;
+    width: 100%;
+    /* margin-left: 4rem; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.info_playlist {
+    background-color: rgb(129, 129, 129);
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: block;
+}
+.header {
+    display: block;
+    width: 30rem;
+}
