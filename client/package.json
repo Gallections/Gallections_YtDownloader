@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Gallections.github.io/Gallections_YtDownloader/",
   "name": "client",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
