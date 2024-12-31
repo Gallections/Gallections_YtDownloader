@@ -9,7 +9,7 @@ import time
 
 def download_video(url):
     try:
-        yt = YouTube(url)
+        yt = YouTube(url, use_po_token=True)
         video_stream = yt.streams.filter(progressive = True).get_highest_resolution()
 
         filename = f"{yt.title}.mp4".replace("/", "_")
@@ -41,7 +41,7 @@ def download_video(url):
 
 def download_audio(url):
     try:
-        yt = YouTube(url)
+        yt = YouTube(url, use_po_token=True)
 
         audio_stream = yt.streams.filter(only_audio=True).first()
         filename = f"{yt.title}.mp3".replace("/", "_")
@@ -72,7 +72,7 @@ def download_audio(url):
 
 def download_playlist_videos(url):
     try:
-        playlist = Playlist(url)
+        playlist = Playlist(url, use_po_token=True)
         def generate():
             for video_url in playlist.video_urls:
                 try:
@@ -122,7 +122,7 @@ def download_playlist_videos(url):
 
 def download_playlist_audios(url):
     try:
-        playlist = Playlist(url)
+        playlist = Playlist(url, use_po_token=True)
         def generate():
             for video_url in playlist.video_urls:
                 try:
