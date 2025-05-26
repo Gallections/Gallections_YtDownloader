@@ -50,8 +50,10 @@ function PlaylistDownloader({color}) {
       setError('');
       setSuccessMessage('');
 
+       // original url: http://localhost:8000/yt_playlist_downloader
+       // rendered url: https://gallectionsytdownloader.onrender.com/yt_playlist_downloader
       try {
-        const response = await fetch("https://gallectionsytdownloader.onrender.com/yt_playlist_downloader", {
+        const response = await fetch("http://localhost:8000/yt_playlist_downloader", {
           method : "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({url, format})
