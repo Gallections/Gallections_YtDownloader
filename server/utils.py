@@ -72,11 +72,11 @@ def download_audio(url):
 
 def download_playlist_videos(url):
     try:
-        playlist = Playlist(url, use_po_token=True)
+        playlist = Playlist(url)
         def generate():
             for video_url in playlist.video_urls:
                 try:
-                    yt = YouTube(video_url)
+                    yt = YouTube(video_url, use_po_token=True)
                     video_stream = yt.streams.filter(progressive = True).get_highest_resolution()
 
                     yield b"--video-boundary\n"
@@ -122,11 +122,11 @@ def download_playlist_videos(url):
 
 def download_playlist_audios(url):
     try:
-        playlist = Playlist(url, use_po_token=True)
+        playlist = Playlist(url)
         def generate():
             for video_url in playlist.video_urls:
                 try:
-                    yt = YouTube(video_url)
+                    yt = YouTube(video_url, use_po_token=True)
                     video_stream = yt.streams.filter(only_audio = True).first()
 
                     yield b"--audio-boundary\n"

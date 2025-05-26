@@ -19,8 +19,9 @@ function Downloader ({color}) {
     setError('');
 
     // original url: http://localhost:8000/yt_downloader
+    // rendered url: https://gallectionsytdownloader.onrender.com/yt_downloader
     try {
-      const response = await fetch("https://gallectionsytdownloader.onrender.com/yt_downloader", {
+      const response = await fetch("http://localhost:8000/yt_downloader", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
